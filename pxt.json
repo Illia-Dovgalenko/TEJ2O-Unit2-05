@@ -8,7 +8,8 @@
     },
     "files": [
         "main.ts",
-        "README.md"
+        "README.md",
+        "_locales/ru/README.md"
     ],
     "targetVersions": {
         "target": "8.0.18",
