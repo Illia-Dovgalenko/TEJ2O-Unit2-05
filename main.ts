@@ -5,18 +5,17 @@
  * This program: Temperature Kelvin
 */
 
-let temperatureK: number
-let temperatureC: number
+let temperatureKelvin: number
+let temperatureCelsius: number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.B, function () {
-
-    temperatureK = input.temperature()
-    temperatureC = (temperatureK + 273.15)
-    temperatureC = Math.round(temperatureC)
+    temperatureKelvin = input.temperature()
+    temperatureCelsius = (temperatureKelvin + 273.15)
+    temperatureCelsius = Math.round(temperatureCelsius)
 
     basic.clearScreen()
-    basic.showString('The temperature is: ' + temperatureC.toString() + 'K')
+    basic.showString('The temperature is: ' + temperatureCelsius.toString() + ' K')
 })
