@@ -1,24 +1,22 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program return percentage of light.
+ * Created by: Illia
+ * Created on: Feb 2026
+ * This program: Temperature Kelvin
 */
 
-// our variable for a random number
-let lightValue: number
-let lightValuePercentage: number
+let temperatureK: number
+let temperatureC: number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-input.onButtonPressed(Button.A, function () {
-  // get light value
-  lightValue = input.lightLevel()
-  lightValuePercentage = (lightValue / 255) * 100
-  lightValuePercentage = Math.round(lightValuePercentage)
+input.onButtonPressed(Button.B, function () {
 
-  // output answer
-  basic.clearScreen()
-  basic.showString('Percentage light is: ' + lightValuePercentage.toString() + '%.')
+    temperatureK = input.temperature()
+    temperatureC = (temperatureK + 273.15)
+    temperatureC = Math.round(temperatureC)
+
+    basic.clearScreen()
+    basic.showString('The temperature is: ' + temperatureC.toString() + 'K')
 })
