@@ -4,8 +4,8 @@
  * Created on: Feb 2026
  * This program: Temperature Kelvin
 */
-let temperatureCelsius: number = 0;
-let temperatureKelvin: number = 0;
+let temperatureCelsius: number = 0
+let temperatureKelvin: number = 0
 
 basic.clearScreen();
 basic.showIcon(IconNames.Happy);
