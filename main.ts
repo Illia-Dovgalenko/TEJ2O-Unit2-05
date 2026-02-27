@@ -12,7 +12,7 @@ basic.showIcon(IconNames.Happy);
 
 input.onButtonPressed(Button.B, function () {
     temperatureCelsius = input.temperature();
-    temperatureKelvin = temperatureCelsius + 273.15;
+    temperatureKelvin = Math.round(temperatureCelsius + 273.15);
 
     basic.clearScreen();
     basic.showString("The temperature is: " + temperatureKelvin + " K");
