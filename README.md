@@ -10,6 +10,4 @@ Run the following command in the terminal, where your *.py file is located:
 
 ``` bash
 py2hex ./main.py
-npx prettier --write
-npx standard --fix
 ```
